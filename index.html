@@ -42,7 +42,10 @@
 
 </head>
 
-<body id="page-top" class="index">
+
+<body id="page-top" class="index content">
+    <div class="loader"></div>
+
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
@@ -93,7 +96,7 @@
                     <div class="intro-text">
                         <div class="type-wrap">
                             <div id="typed-strings">
-                                <p>websites.^300</p>
+                                <p>sites.^300</p>
                                 <p>bots.^300</p>
                                 <p>apps.^300</p>
                                 <p>projects.^300</p>
@@ -352,6 +355,14 @@
 
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            window.setTimeout("fadeMyDiv();", 3000); //call fade in 3 seconds
+            })
+        function fadeMyDiv() {
+            $(".loader").fadeOut('slow');
+            }
+        </script>
     <!--<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 
@@ -363,6 +374,7 @@
 
     <!-- Plugin JavaScript -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
 
 
     <!-- Theme JavaScript -->
@@ -458,8 +470,6 @@
      <script>
         jssor_1_slider_init();
     </script>
-
-
 
 
 </body>
